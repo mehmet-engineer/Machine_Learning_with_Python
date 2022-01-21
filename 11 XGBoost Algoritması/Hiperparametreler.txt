@@ -1,0 +1,26 @@
+ 
+ Bazı Hiperparametreler:
+
+booster
+booster, 3 seçeneğiniz olan artırma algoritmasıdır: gbtree, gblinear veya dart. Varsayılan seçenek, gbtree’dir. 
+Dart, aşırı öğrenmeyi (over-fitting) önlemek için bırakma (dropout) tekniklerini kullanan benzer bir sürümdür. 
+Gblinear ise, karar ağacı yerine genelleştirilmiş doğrusal regresyon kullanır.
+
+reg_alpha and reg_lambda
+reg_alpha ve reg_lambda, sırasıyla L1 ve L2 regülasyon terimleridir. Bu sayılar ne kadar büyükse, 
+model o kadar tutucu ( aşırı öğrenmeye daha az eğilimli) olur. Her iki regülasyon terimi için önerilen değerler 
+0-1000 arasındadır.
+
+max_depth
+max_depth hiperparametresi, karar ağaçlarının maksimum derinliğini ayarlar. Bu sayı ne kadar büyük olursa 
+model o kadar az tutucu hale gelir. 0 olarak ayarlanır ise, ağaçların derinliği için bir sınır söz konusu olmaz.
+
+subsample
+subsample, tahminleyicileri eğitirken kullanılacak örnek oranının boyutudur. Varsayılan değeri 1’dir, 
+yani örnekleme yoktur ve tüm veriler kullanılır. Örneğin bu parametre, 0.7 olarak ayarlanırsa, 
+gözlemlerin %70’i her artırma yinelemesinde kullanılmak üzere rastgele örneklenir. 
+Aşırı öğrenmeyi önlemeye yardımcı olan bir parametredir.
+
+num_estimators
+num_estimators, kullanılacak olan artırılan ağaçların tur sayısını ayarlar. Bu sayı ne kadar büyükse, 
+aşırı öğrenme riski de o kadar artar. Ancak düşük sayılar aynı zamanda düşük performansa da yol açabilir.
