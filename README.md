@@ -1,20 +1,13 @@
-# Python ile Makine Öğrenmesi
-Makine Öğrenmesi veya istatistiksel öğrenme, bir takım istatistik araçları kullanarak veriler üzerinden çıkarımlar yapan,
-verileri anlamlandıran, tahmin/regresyon ve sınıflandırma gibi problemleri çözen matematiksel algoritmalar bütünüdür.
+# Machine Learning with Python
+Machine Learning or statistical learning is a set of mathematical algorithms that make inferences from the data, make sense of the data, and solve problems such as prediction/regression and classification using a number of statistical tools.
 
-## Makine Öğrenmesi 3 gruba ayrılır:
+## Machine Learning is divided into 3 groups:
 
-1) Eğiticili (Supervised) Öğrenme:
-Modele girdi ve çıktılardan oluşan referans veri kümesinin verildiği öğrenme metodudur. Model, referans çıktılara göre
-kendi değerlerini iterasyonlarla günceller. Örnek olarak sınıflandırma tahmin/regresyon problemleri bu tip öğrenme yöntemiyle 
-çözülmektedir.
+1) Supervised Learning:
+It is a learning method in which a reference dataset consisting of inputs and outputs is given to the model. The model updates its values with iterations according to the reference outputs. For example, classification estimation/regression problems are solved by this type of learning method.
 
-2) Eğiticisiz (Unsupervised) Öğrenme:
-Modele girdilerin verildiği ancak referans çıktıların bilinmediği öğrenme türüdür. Örneğin müşteri segemntasyonu uygulamasında
-müşteri verilerden benzer davranışlara sahip kümeler çıkartır. Böylece satılması istenen ürünler için uygun kitle belirlenmiş olur.
-Bu gibi kümeleme ve boyut azaltma problemleri bu tür öğrenme yöntemi sayesinde çözülebilmektedir.
+2) Unsupervised Learning:
+It is a type of learning where inputs are given to the model but reference outputs are not known. For example, in the customer segmentation application, the customer extracts clusters with similar behavior from the data. Thus, the appropriate audience for the products to be sold is determined. Such clustering and size reduction problems can be solved by this type of learning method.
 
-3) Pekiştirmeli (Reinforcement) Öğrenme:
-İçgüdüsel öğrenme tarzıdır. Öğrenen etkenin çevreyle etkileşime girmesi sonucu geri bildirim alması ve buna bağlı olarak optimum
-politikayı bulmasıdır. Bir bebeğin sıcak bir şeye dokunup elinin yanması sonucu, o şeye dokunmaktan vazgeçme politikasını
-benimsemesi örnek olarak verilebilir. Bu tip öğrenmenin oyun ve labirent çözme gibi uygulama alanları mevcuttur.
+3) Reinforcement Learning:
+It is an instinctive learning style. It is the learning factor that receives feedback as a result of interacting with the environment and accordingly finds the optimum policy. An example is a baby's adopting a policy of not touching something hot, as a result of which his hand is burned. This type of learning has application areas such as games and maze solving.
